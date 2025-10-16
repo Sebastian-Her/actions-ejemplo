@@ -18,7 +18,6 @@ class Person:
         self.last_name = last_name
         
     
-
     def __str__(self):
         """
         Retorna una representación en string de la persona.
@@ -29,7 +28,9 @@ class Person:
         Returns:
             str: Nombre completo capitalizado
         """
-        return f"{self.first_name.title()} {self.last_name.title()}"
+        nombre = self.first_name.title()
+        apellido = self.last_name.title()
+        return f"{nombre} {apellido}"
         
 
 
